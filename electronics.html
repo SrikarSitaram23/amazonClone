@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option>Health & Personal Care</option>
+            <option>Clothes</option>
+            <option>Furniture</option>
+            <option>Discover Fashion Trends</option>
+            <option>New arrival & Toys</option>
+            <option>Pet Care</option>
+            <option>Beauty picks</option>
+            <option>Electronics</option>
+          </select>
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <a href="cart.html" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+      <h2>Results</h2>
+      <p>Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="Smartphones (Android, iPhone).jpg" alt="Smartphones (Android, iPhone)">
+          <div class="product-title">Smartphones (Android, iPhone) </div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(52,653)</span></div>
+          <div class="product-price">₹29,899 <span class="discount">Save ₹9,000</span></div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="30">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Tablets & iPads.jpg" alt="Tablets & iPads">
+          <div class="product-title">Tablets & iPads</div>
+          <div class="product-rating">⭐⭐⭐⭐⭐ <span>(22,301)</span></div>
+          <div class="product-price">₹49,900 <span class="discount">Save ₹5799</span></div>
+          <div class="delivery">Delivery <strong>Tue, May 20</strong></div>
+          <button class="add-cart" data-id="31">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Smartwatches.jpg" alt="Smartwatches">
+          <div class="product-title">Smartwatches</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(15,439)</span></div>
+          <div class="product-price">₹7999</div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="32">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Laptops & Desktops.jpg" alt="Laptops & Desktops">
+            <div class="product-title">Laptops & Desktops</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(87,335)</span></div>
+            <div class="product-price">₹99,999</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="33">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Keyboards & Mice.jpg" alt="Keyboards & Mice">
+            <div class="product-title">Keyboards & Mice.</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹69,999</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="34">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="External Hard Drives & SSDs.jpg" alt="External Hard Drives & SSDs">
+            <div class="product-title">External Hard Drives & SSDs</div>
+            <div class="product-rating">⭐⭐⭐⭐    ☆ <span>(19,532)</span></div>
+            <div class="product-price">₹6,699</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="35">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="USB Hubs & Cables.jpg" alt="USB Hubs & Cables">
+            <div class="product-title">USB Hubs & Cables</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹16,860 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="36">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Webcams.jpg" alt="Webcams">
+            <div class="product-title">Webcams</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹2,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="37">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Laptop Bags.jpg" alt="Laptop Bags">
+            <div class="product-title">Laptop Bags</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹1,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="38">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Bluetooth Speakers.jpg" alt="Bluetooth Speakers">
+            <div class="product-title">Bluetooth Speakers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹10,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="39">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Smart TVs.jpg" alt="Smart TVs">
+            <div class="product-title">Smart TVs</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(35,439)</span></div>
+            <div class="product-price">₹92,699 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="40">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Streaming Devices (Fire TV Stick, Chromecast).jpg" alt="Streaming Devices (Fire TV Stick, Chromecast)">
+            <div class="product-title">Streaming Devices (Fire TV Stick, Chromecast)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹15,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="41">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Action Cameras (GoPro).jpg" alt="Action Cameras (GoPro)">
+            <div class="product-title">Action Cameras (GoPro)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹1,52,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="42">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Gaming Controllers.jpg" alt="Gaming Controllers">
+            <div class="product-title">Gaming Controllers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹7,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="43">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="VR Headsets.jpg" alt="VR Headsets">
+            <div class="product-title">VR Headsets</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(43,489)</span></div>
+            <div class="product-price">₹18,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="44">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Hair Dryers.jpg" alt="Hair Dryers">
+            <div class="product-title">Hair Dryers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹2,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="45">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Electric Kettles.jpg" alt="Electric Kettles">
+            <div class="product-title">Electric Kettles</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹1,199</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="46">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Trimmers & Shavers.jpg" alt="Trimmers & Shavers">
+            <div class="product-title">Trimmers & Shavers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹1,599 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="47">Add to cart</button>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+  <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+</body>
+</html>

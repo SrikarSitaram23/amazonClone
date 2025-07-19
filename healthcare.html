@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option>Health & Personal Care</option>
+            <option>Clothes</option>
+            <option>Furniture</option>
+            <option>Discover Fashion Trends</option>
+            <option>New arrival & Toys</option>
+            <option>Pet Care</option>
+            <option>Beauty picks</option>
+            <option>Electronics</option>
+          </select>
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <a href="cart.html" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+      <h2>Results</h2>
+      <p>Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="medicines.jpg" alt="medicines">
+          <div class="product-title">Medicines (Pack of 4)</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(12,453)</span></div>
+          <div class="product-price">₹129 <span class="discount">Save ₹20</span></div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="57">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="supplements.jpg" alt="supplements">
+          <div class="product-title">Supplements (1 Pc)</div>
+          <div class="product-rating">⭐⭐⭐⭐⭐ <span>(22,301)</span></div>
+          <div class="product-price">₹349 <span class="discount">Save ₹50</span></div>
+          <div class="delivery">Delivery <strong>Tue, May 20</strong></div>
+          <button class="add-cart" data-id="58">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="wellness.jpg" alt="Wellness Devices">
+          <div class="product-title">Wellness Devices</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+          <div class="product-price">₹999</div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="59">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="personalhygiene.jpg" alt="Hygiene">
+            <div class="product-title">Personal Hygiene</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹99</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="60">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="sanitizers.jpg" alt="Sanitizers">
+            <div class="product-title">Sanitizers & Disinfectants</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹69</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="61">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Eye.jpg" alt="Eye Drops & Eye Wash">
+            <div class="product-title">Eye Drops & Eye Wash</div>
+            <div class="product-rating">⭐⭐⭐⭐    ☆ <span>(5,432)</span></div>
+            <div class="product-price">₹225</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="62">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Pain.jpg" alt="Pain Relief Products">
+            <div class="product-title">Pain Relief Products</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹160</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="63">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Face Masks.jpg" alt="Face Masks Relief Products">
+            <div class="product-title">Face Masks Relief Products</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹160</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="64">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Digital Thermometers.jpg" alt="Digital Thermometers Relief Products">
+            <div class="product-title">Digital Thermometers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹799</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="65">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Glucometers.jpg" alt="Glucometers">
+            <div class="product-title">Glucometers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1600</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="66">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Oximeters.jpg" alt="Oximeters">
+            <div class="product-title">Oximeters</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1300</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="67">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Weighing Scales.jpg" alt="Weighing Scales">
+            <div class="product-title">Weighing Scales</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1990</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="68">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Knee Caps & Wrist Supports.jpg" alt="Knee Caps & Wrist Supports">
+            <div class="product-title">Knee Caps & Wrist Supports</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹500</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="69">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Back Braces.jpg" alt="Back Braces">
+            <div class="product-title">Back Braces</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹460</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="70">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Nebulizers.jpg" alt="Nebulizers">
+            <div class="product-title">Nebulizers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1660</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="71">Add to cart</button>
+          </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+
+  <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+</body>
+</html>

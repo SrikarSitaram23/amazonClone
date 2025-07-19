@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option>Health & Personal Care</option>
+            <option>Clothes</option>
+            <option>Furniture</option>
+            <option>Discover Fashion Trends</option>
+            <option>New arrival & Toys</option>
+            <option>Pet Care</option>
+            <option>Beauty picks</option>
+            <option>Electronics</option>
+          </select>
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <a href="cart.html" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+      <h2>Results</h2>
+      <p>Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="tshirts.jpg" alt="Tshirts">
+          <div class="product-title">Men's T-shirts (Pack of 4)</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(12,453)</span></div>
+          <div class="product-price">₹1299 <span class="discount">Save ₹200</span></div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="19">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Trousers.jpg" alt="Trousers">
+          <div class="product-title">Trousers (2 Pc)</div>
+          <div class="product-rating">⭐⭐⭐⭐⭐ <span>(22,301)</span></div>
+          <div class="product-price">₹3499 <span class="discount">Save ₹560</span></div>
+          <div class="delivery">Delivery <strong>Tue, May 20</strong></div>
+          <button class="add-cart" data-id="20">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Jackets & Coats.jpg" alt="Jackets & Coats">
+          <div class="product-title">Jackets & Coats</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+          <div class="product-price">₹4999</div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="21">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Ethnic Wear.jpg" alt="Ethnic Wear">
+            <div class="product-title">Ethnic Wear</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹6969</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="22">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Leggings & Palazzos.jpg" alt="Leggings & Palazzos">
+            <div class="product-title">Leggings & Palazzos(Pack of 3)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹899</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="23">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="School Uniforms.jpg" alt="School Uniforms">
+            <div class="product-title">School Uniforms</div>
+            <div class="product-rating">⭐⭐⭐⭐    ☆ <span>(5,432)</span></div>
+            <div class="product-price">₹2125</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="24">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Seasonal Wear.jpg" alt="Seasonal Wear">
+            <div class="product-title">Seasonal Wear</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1650</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="25">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Casual Shoes.jpg" alt="Casual Shoes">
+            <div class="product-title">Casual Shoes</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹1550</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="26">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Sandals.jpg" alt="Sandals">
+            <div class="product-title">Sandals</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹650</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="27">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Sneakers.jpg" alt="Sneakers">
+            <div class="product-title">Sneakers</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹4250</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="28">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Caps & Hats.jpg" alt="Caps & Hats">
+            <div class="product-title">Caps & Hats</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹220</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="29">Add to cart</button>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+  <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+</body>
+</html>

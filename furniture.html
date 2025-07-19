@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select" onchange="redirectToPage()" id="categorySelect">
+            <option value="all.html">All</option>
+            <option value="healthcare.html">Health & Personal Care</option>
+            <option value="clothes.html">Clothes</option>
+            <option value="furniture.html">Furniture</option>
+            <option value="fashion.html">Discover Fashion Trends</option>
+            <option value="new-arrival.html">New arrival & Toys</option>
+            <option value="pet.html">Pet Care</option>
+            <option value="beauty.html">Beauty picks</option>
+            <option value="electronics.html">Electronics</option>
+          </select>
+
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+          <div class="nav-cart border">
+            <a href="cart.html" style="color: white; text-decoration: none;">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart (<span id="cart-count">0</span>)
+            </a>
+          </div>
+        
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+      <h2>Results</h2>
+      <p>Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="Sofas & Sectionals.jpg" alt="Sofas & Sectionals">
+          <div class="product-title">Sofas & Sectionals </div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(52,653)</span></div>
+          <div class="product-price">₹1,29,899 <span class="discount">Save ₹20,000</span></div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="1" data-title="Sofas & Sectionals" data-price="129899">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Coffee Tables.jpg" alt="Coffee Tables">
+          <div class="product-title">Coffee Tables</div>
+          <div class="product-rating">⭐⭐⭐⭐⭐ <span>(22,301)</span></div>
+          <div class="product-price">₹34,900 <span class="discount">Save ₹5000</span></div>
+          <div class="delivery">Delivery <strong>Tue, May 20</strong></div>
+          <button class="add-cart" data-id="2" data-title="Coffee Tables" data-price="34900">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="Bookshelves.jpg" alt="Bookshelves">
+          <div class="product-title">Bookshelves</div>
+          <div class="product-rating">⭐⭐⭐⭐☆ <span>(15,439)</span></div>
+          <div class="product-price">₹7999</div>
+          <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+          <button class="add-cart" data-id="3" data-title="Bookshelves" data-price="7999">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Shoe Racks.jpg" alt="Shoe Racks">
+            <div class="product-title">Shoe Racks</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(7,335)</span></div>
+            <div class="product-price">₹999</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="4" data-title="Shoe Racks" data-price="999">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Beds (King, Queen, Single).jpg" alt="Beds (King, Queen, Single)">
+            <div class="product-title">Beds (King, Queen, Single)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹69,999</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="5" data-title="Beds (King, Queen, Single)" data-price="69999">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Wardrobes.jpg" alt="Wardrobes">
+            <div class="product-title">Wardrobes</div>
+            <div class="product-rating">⭐⭐⭐⭐    ☆ <span>(5,432)</span></div>
+            <div class="product-price">₹29,699</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="6" data-title="Wardrobes" data-price="29699">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Dining Chairs.jpg" alt="Dining Chairs">
+            <div class="product-title">Dining Chairs</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,432)</span></div>
+            <div class="product-price">₹16,860 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="7" data-title="Dining Chairs" data-price="16860">Add to cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Computer Desks.jpg" alt="Computer Desks">
+            <div class="product-title">Computer Desks</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(25,439)</span></div>
+            <div class="product-price">₹12,690 (2 Pc)</div>
+            <div class="delivery">Delivery <strong>Mon, May 19</strong></div>
+            <button class="add-cart" data-id="8" data-title="Computer Desks" data-price="12690">Add to cart</button>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+
+<script src="cartUtils.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCartCount();
+    attachAddToCartListeners();
+  });
+</script>
+ 
+</body>
+</html>

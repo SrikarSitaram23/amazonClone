@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option>Health & Personal Care</option>
+            <option>Clothes</option>
+            <option>Furniture</option>
+            <option>Discover Fashion Trends</option>
+            <option>New arrival & Toys</option>
+            <option>Pet Care</option>
+            <option>Beauty picks</option>
+            <option>Electronics</option>
+          </select>
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <a href="cart.html" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+        <h2>New Arrivals & Toys</h2>
+        <p>Discover the latest in fun and learning. Product details and prices may vary by brand and features.</p>
+      
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="women_dress.jpg" alt="Women's Floral Dress">
+                <div class="product-title">Women's Floral Dress</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐ <span>(3,250)</span></div>
+                <div class="product-price">₹2499 <span class="discount">Save ₹300</span></div>
+                <div class="delivery">Delivery <strong>Fri, May 24</strong></div>
+                <button class="add-cart" data-id="48">Add to cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="men_shirt.jpg" alt="Men's Slim Fit Shirt">
+                <div class="product-title">Men's Slim Fit Shirt</div>
+                <div class="product-rating">⭐⭐⭐⭐☆ <span>(1,245)</span></div>
+                <div class="product-price">₹999 <span class="discount">Save ₹150</span></div>
+                <div class="delivery">Delivery <strong>Thu, May 23</strong></div>
+                <button class="add-cart" data-id="49">Add to cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="women_jumpsuit.jpg" alt="Women's Jumpsuit">
+                <div class="product-title">Women's Jumpsuit</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐ <span>(2,532)</span></div>
+                <div class="product-price">₹1799 <span class="discount">Save ₹250</span></div>
+                <div class="delivery">Delivery <strong>Wed, May 22</strong></div>
+                <button class="add-cart" data-id="50">Add to cart</button>
+            </div>
+      
+            <div class="product-card">
+                <img src="men_jeans.jpg" alt="Men's Casual Jeans">
+                <div class="product-title">Men's Casual Jeans</div>
+                <div class="product-rating">⭐⭐⭐⭐☆ <span>(1,890)</span></div>
+                <div class="product-price">₹1299 <span class="discount">Save ₹100</span></div>
+                <div class="delivery">Delivery <strong>Mon, May 20</strong></div>
+                <button class="add-cart" data-id="51">Add to cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="women_skirt.jpg" alt="Women's A-Line Skirt">
+                <div class="product-title">Women's A-Line Skirt</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐ <span>(3,658)</span></div>
+                <div class="product-price">₹899 <span class="discount">Save ₹150</span></div>
+                <div class="delivery">Delivery <strong>Fri, May 24</strong></div>
+                <button class="add-cart" data-id="52">Add to cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="men_t-shirt.jpg" alt="Men's Graphic T-shirt">
+                <div class="product-title">Men's Graphic T-shirt</div>
+                <div class="product-rating">⭐⭐⭐⭐☆ <span>(4,020)</span></div>
+                <div class="product-price">₹799 <span class="discount">Save ₹100</span></div>
+                <div class="delivery">Delivery <strong>Wed, May 22</strong></div>
+                <button class="add-cart" data-id="53">Add to cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="women_scarf.jpg" alt="Women's Silk Scarf">
+                <div class="product-title">Women's Silk Scarf</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐ <span>(5,112)</span></div>
+                <div class="product-price">₹649 <span class="discount">Save ₹50</span></div>
+                <div class="delivery">Delivery <strong>Thu, May 23</strong></div>
+                <button class="add-cart" data-id="54">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="men_sunglasses.jpg" alt="Men's Stylish Sunglasses">
+                <div class="product-title">Men's Stylish Sunglasses</div>
+                <div class="product-rating">⭐⭐⭐⭐☆ <span>(1,315)</span></div>
+                <div class="product-price">₹1299 <span class="discount">Save ₹200</span></div>
+                <div class="delivery">Delivery <strong>Tue, May 21</strong></div>
+                <button class="add-cart" data-id="55">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="men_watches.jpg" alt="Men's Stylish Watches">
+                <div class="product-title">Men's Stylish Watces</div>
+                <div class="product-rating">⭐⭐⭐⭐☆ <span>(5,712)</span></div>
+                <div class="product-price">₹6299 <span class="discount">Save ₹3599</span></div>
+                <div class="delivery">Delivery <strong>Tue, May 21</strong></div>
+                <button class="add-cart" data-id="56">Add to cart</button>
+            </div>
+      
+        </div>
+      </div>
+      
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+
+  <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+</body>
+</html>

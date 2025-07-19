@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boxstyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+            <option>Health & Personal Care</option>
+            <option>Clothes</option>
+            <option>Furniture</option>
+            <option>Discover Fashion Trends</option>
+            <option>New arrival & Toys</option>
+            <option>Pet Care</option>
+            <option>Beauty picks</option>
+            <option>Electronics</option>
+          </select>
+          <input placeholder="Search amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <p><span>Hello, Signin</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <a href="cart.html" style="color: white; text-decoration: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i> All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Registry</p>
+          <p>Prime Video</p>
+          <p>Gift Cards</p>
+          <p>Customer Service</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <div class="product-results">
+        <h2>Results</h2>
+        <p>Explore our top beauty picks. From skincare to makeup essentials, find everything to look and feel your best.</p>
+      
+        <div class="product-grid">
+      
+          <div class="product-card">
+            <img src="facecream.jpg" alt="Face Cream">
+            <div class="product-title">Hydrating Face Cream (50ml)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(8,542)</span></div>
+            <div class="product-price">₹299 <span class="discount">Save ₹60</span></div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="9">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="lipstick.jpg" alt="Lipstick">
+            <div class="product-title">Matte Lipstick Set (6 Shades)</div>
+            <div class="product-rating">⭐⭐⭐⭐⭐ <span>(12,210)</span></div>
+            <div class="product-price">₹499 <span class="discount">Save ₹100</span></div>
+            <div class="delivery">Delivery <strong>Thu, May 22</strong></div>
+            <button class="add-cart" data-id="10">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="eyeliner.jpg" alt="Eyeliner">
+            <div class="product-title">Waterproof Liquid Eyeliner</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(4,321)</span></div>
+            <div class="product-price">₹199</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="11">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="moisturizer.jpg" alt="Moisturizer">
+            <div class="product-title">Daily Moisturizer (100ml)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(6,732)</span></div>
+            <div class="product-price">₹249</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="12">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="serum.jpg" alt="Face Serum">
+            <div class="product-title">Vitamin C Face Serum</div>
+            <div class="product-rating">⭐⭐⭐⭐⭐ <span>(9,110)</span></div>
+            <div class="product-price">₹699 <span class="discount">Save ₹150</span></div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="shampoo.jpg" alt="Shampoo">
+            <div class="product-title">Herbal Nourishing Shampoo (250ml)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(7,432)</span></div>
+            <div class="product-price">₹189</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="nailpaint.jpg" alt="Nail Paint">
+            <div class="product-title">Nail Paint Combo (Set of 5)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(3,902)</span></div>
+            <div class="product-price">₹349</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="compact.jpg" alt="Compact Powder">
+            <div class="product-title">Oil Control Compact Powder</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(4,215)</span></div>
+            <div class="product-price">₹259</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="facewash.jpg" alt="Face Wash">
+            <div class="product-title">Gentle Face Wash (150ml)</div>
+            <div class="product-rating">⭐⭐⭐⭐ <span>(5,630)</span></div>
+            <div class="product-price">₹179</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="makeupremover.jpg" alt="Makeup Remover">
+            <div class="product-title">Micellar Makeup Remover (100ml)</div>
+            <div class="product-rating">⭐⭐⭐⭐☆ <span>(6,189)</span></div>
+            <div class="product-price">₹229</div>
+            <div class="delivery">Delivery <strong>Wed, May 21</strong></div>
+            <button class="add-cart" data-id="1">Add to cart</button>
+          </div>
+      
+        </div>
+      </div>
+      
+
+    <div class="foot-panel3">
+      <div class="logo"></div>
+    </div>
+  </div>
+
+  <div class="foot-panel4">
+    <div class="pages">
+      <a>Conditions of Use</a>
+      <a >Privacy Notice</a>
+      <a >Your Ads and Privacy Choices</a>
+    </div>
+
+    <div class="copyright">
+      © 1996-2025, Amazon.com, Inc. or its affiliates
+    </div>
+  </div>
+  <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+</body>
+</html>

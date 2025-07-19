@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAmazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">    
+                </div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select" id="categorySelect" onchange="redirectToPage()">
+                    <option value="all.html">All</option>
+                    <option value="healthcare.html">Health & Personal Care</option>
+                    <option value="clothes.html">Clothes</option>
+                    <option value="furniture.html">Furniture</option>
+                    <option value="fashion.html">Discover Fashion Trends</option>
+                    <option value="new-arrival.html">New arrival & Toys</option>
+                    <option value="pet.html">Pet Care</option>
+                    <option value="beauty.html">Beauty picks</option>
+                    <option value="electronics.html">Electronics</option>
+                </select>
+                <input placeholder="Search amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-signin border" id="accountDropdown" style="position: relative;">
+                <p><span><a href="signin.html" id="navUserLink">Sign In</a></span></p>
+                <p class="nav-second" id="navAccountText">Account & Lists</p>
+                <div id="logoutMenu" style="display: none; position: absolute; top: 100%; background-color: white; color: black; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 100;">
+                  <a href="#" onclick="logout()" style="text-decoration: none; color: black;">Logout</a>
+                </div>
+              </div>
+              
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second"><a href="orders.html">& Orders</a></p>
+            </div>
+
+            <div class="nav-cart border">
+                <a href="cart.html" style="color: white; text-decoration: none;">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Cart (<span id="cart-count">0</span>)
+                </a>
+              </div>              
+            
+        </div>
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Registry</p>
+                <p>Prime Video</p>
+                <p>Gift Cards</p>
+                <p>Customer Service</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+    
+
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <a href="healthcare.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Clothes</h2>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <a href="clothes.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <a href="furniture.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <a href="electronics.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <a href="beauty.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <a href="pet.html" class="see-more">See More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>New arrival & Toys</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <a href="new-arrival.html" class="see-more">See More</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <h2>Discover Fashion Trends</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <a href="fashion.html" class="see-more">See More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <button class="foot-panel1" onclick="scrollToTop()">Back to Top</button>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Services</a>
+            </ul>
+        
+            <ul>
+                <p> Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Sell on Amazon Business</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+            </ul>
+            
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Your Account</a>
+                <a>Amazon and COVID-19</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>HelpManage Your Content and Devices</a>
+                <a></a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads and Privacy Choices</a>
+            </div>
+
+            <div class="copyright">
+                © 1996-2025, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      
+        function redirectToPage() {
+          var selectedPage = document.getElementById("categorySelect").value;
+          window.location.href = selectedPage;
+        }
+      
+        function logout() {
+          localStorage.removeItem('amazonUser');
+          window.location.href = "signin.html";
+        }
+      
+        window.addEventListener('DOMContentLoaded', function () {
+          const user = localStorage.getItem('amazonUser');
+      
+          if (user) {
+            const navUserLink = document.getElementById('navUserLink');
+            const navAccountText = document.getElementById('navAccountText');
+            const logoutMenu = document.getElementById('logoutMenu');
+            const accountDropdown = document.getElementById('accountDropdown');
+      
+            if (navUserLink) {
+              navUserLink.innerText = `Welcome, ${user}`;
+              navUserLink.href = "#"; // disable link
+            }
+      
+            if (navAccountText) {
+              navAccountText.innerText = "▼ Account";
+            }
+      
+            if (accountDropdown && logoutMenu) {
+              accountDropdown.addEventListener('mouseenter', () => {
+                logoutMenu.style.display = 'block';
+              });
+              accountDropdown.addEventListener('mouseleave', () => {
+                logoutMenu.style.display = 'none';
+              });
+            }
+          }
+        });
+      </script>  
+      <script src="cartUtils.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          updateCartCount();
+          attachAddToCartListeners();
+        });
+      </script>
+      
+       
+</body>
+</html>
